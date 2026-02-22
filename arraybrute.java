@@ -56,14 +56,45 @@ public class arraybrute {
             System.out.print(newarr[i]+" ");
         }
     }
+    public static void transferarr(int arr[])
+    {
+        int newar[]=new int[arr.length];
+        for(int i=0;i<arr.length;i++)
+        {
+            newar[i]=arr[i];
+        }
+        for(int i=0;i<arr.length;i++)
+        {
+            System.out.print(newar[i]+" ");
+        }
+    }
+    public static void countunique(int arr[])
+    {  
+        for(int i=0;i<arr.length;i++)
+        {
+             int cnt=0;
+            for(int j=0;j<arr.length;j++)
+            {
+                if(arr[i]==arr[j])
+                {
+                    cnt+=1;
+                }
+            }
+            if(cnt==1)
+            {
+                System.out.println(arr[i]);
+            }
+        }
+    }
     public static void main(String args[])
     {
 int ar[]={12,23,45,78,43,12};
 //int pos=1;
 //int ele=90;
-int ele2=12;
-deletefrom(ar, ele2);
+//int ele2=12;
+//deletefrom(ar, ele2);
 //insertintoarray(ar, ele, pos);
-
+//transferarr(ar);
+countunique(ar);
     }
 }

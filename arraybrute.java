@@ -86,9 +86,10 @@ public class arraybrute {
             }
         }
     }
+    
     public static void main(String args[])
     {
-int ar[]={12,23,45,78,43,12};
+int ar[]={12,23,23,12,45,78,43,12};
 //int pos=1;
 //int ele=90;
 //int ele2=12;

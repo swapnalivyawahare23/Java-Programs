@@ -86,7 +86,18 @@ public class arraybrute {
             }
         }
     }
-    
+    public static boolean search(int arr[],int ele)
+    {
+        int len=arr.length;
+        for(int i=0;i<len;i++)
+        {
+            if(ele==arr[i])
+            {
+                return true;
+            }
+        }
+        return false;
+    }
     public static void main(String args[])
     {
 int ar[]={12,23,23,12,45,78,43,12};
@@ -96,6 +107,13 @@ int ar[]={12,23,23,12,45,78,43,12};
 //deletefrom(ar, ele2);
 //insertintoarray(ar, ele, pos);
 //transferarr(ar);
-countunique(ar);
+//countunique(ar);
+if(search(ar,5))
+{
+    System.out.println("Element found!!");
+}
+else{
+    System.out.println("Element not found!!");
+}
     }
 }

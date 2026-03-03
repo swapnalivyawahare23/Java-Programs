@@ -98,6 +98,10 @@ public class arraybrute {
         }
         return false;
     }
+    public static void sorttwoarray()
+    {
+        
+    }
     public static void main(String args[])
     {
 int ar[]={12,23,23,12,45,78,43,12};
